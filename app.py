@@ -19,7 +19,7 @@ mu = st.sidebar.slider('正規分布の期待値', min_value=-5.0, max_value=5.0
 sigma = st.sidebar.slider('正規分布の分散', min_value=0.1, max_value=20.0, step=0.1)
 
 # 標準正規分布の描画
-x_1 = np.linespace(-10, 10, 100)
+x_1 = np.linspace(-10, 10, 100)
 z = stats.norm.pdf(x_1, mu=mu, sigma=sigma)
 
 fig_norm, ax1 = plt.subplots()
@@ -38,7 +38,7 @@ lam = st.sidebar.slider('ポアソン分布の期待値', min_value=0, max_value
 
 # ポアソン分布の描画
 x_2 = np.linspace(0, 30, 31)
-r = stats.poisson.pmf(x_2, lamda)
+r = stats.poisson.pmf(x_2, lam)
 
 fig_pois, ax2 = plt.subplots()
 ax2.bar(x_2, height=r, color='#00A968', label='poisson')
@@ -78,5 +78,5 @@ plt.figure(figsize=(6, 4))
 plt.plot(solve.t, solve.y.T)
 plt.xlabel('day')
 plt.ylabel('population')
-plt.legnd(['Susceptible', 'Infectious', 'Removed'])
+plt.legend(['Susceptible', 'Infectious', 'Removed'])
 st.pyplot(plt)
