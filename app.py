@@ -20,7 +20,8 @@ sigma = st.sidebar.slider('正規分布の分散', min_value=0.1, max_value=20.0
 
 # 標準正規分布の描画
 x_1 = np.linspace(-10, 10, 100)
-z = stats.norm.pdf(x_1, mu=mu, sigma=sigma)
+z = stats.norm.pdf(x_1, loc=mu, scale=sigma)
+
 
 fig_norm, ax1 = plt.subplots()
 ax1.plot(x_1, z, label='std_norm')
