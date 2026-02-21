@@ -1,16 +1,4 @@
-<<<<<<< HEAD
 streamlit
 pandas
 plotly
 scikit-learn
-
-データはe-statから
-=======
-streamlit
-pandas
-plotly
-scikit-learn
-
-データはe-statから
->>>>>>> fb47f34dfa3ec6f1156a8cad2d0d8c18fec8429c
-https://www.e-stat.go.jp/stat-search/files?page=1&layout=datalist&toukei=00200553&tstat=000001145590&cycle=0&tclass1=000001145649&tclass2=000001145668&tclass3=000001169888&stat_infid=000032268571&tclass4val=0
