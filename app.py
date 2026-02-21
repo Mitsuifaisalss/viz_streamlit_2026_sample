@@ -11,7 +11,7 @@ from sklearn.preprocessing import StandardScaler
 st.set_page_config(page_title="日本の製造業ポテンシャルマップ", layout="wide")
 
 st.title("🗾 日本の製造業ポテンシャルマップ")
-st.write("e-Statのデータと最新の機械学習（クラスタリング・異常検知）を駆使し、日本の製造業の真の姿を浮き彫りにします。BY Faisal Mitsui")
+st.write("e-Statのデータと最新の機械学習（クラスタリング・異常検知）を駆使し、日本の製造業の真の姿を浮き彫りにします。BY 三ツ井ファイサルシャフザード")
 
 # --- 47都道府県の緯度経度データ ---
 pref_coords = {
